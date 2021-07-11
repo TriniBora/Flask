@@ -1,0 +1,9 @@
+{% extends './layout.html' %} {% block title %} {{data.titulo}} {% endblock %} {% block body %}
+<h1>Listado departamentos</h1>
+
+<ul>
+    {% for depto in data.departamentos %}
+    <li>{{depto[1]}} - {{depto[0]}}</li>
+    {% endfor %}
+</ul>
+{% endblock%}
